@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title>BusinesMarket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">BusinesMarket   <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="search.html">Consulta</a></li>
+      <li><a href="#">Sobre</a></li>
+      
+    </ul>
+  </div>
+</nav>
+<br/><br/><br/><br/>
+
+<h3>Adicionar</h3>
+<form action="index.html">
+  <!-- area de campos do form -->
+  <div class="row">
+ <div class="form-group col-md-4">
+   <label for="codigo">Codigo da mercadoria</label>
+   <input type="text" class="form-control" id="codigo">
+ </div>
+
+ <div class="form-group col-md-4">
+   <label for="tipo">Tipo da mercadoria</label>
+   <input type="text" class="form-control" id="tipo">
+ </div>
+
+ <div class="form-group col-md-4">
+   <label for="quantidade">Quantidade</label>
+   <input type="text" class="form-control" id="quantidade">
+ </div>
+
+ <div class="form-group col-md-4">
+   <label for="preco">Preço</label>
+   <input type="text" class="form-control" id="preco">
+ </div>
+
+<div class="form-group col-md-4">
+   <div class="dropdown">
+     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tipo de negócio
+     <span class="caret"></span></button>
+     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Compra</a></li>
+       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Venda</a></li>
+     </ul>
+   </div>
+</div>
+
+<script>
+           function verificaNumero(e) {
+               if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                   return false;
+               }
+           }
+
+           $(document).ready(function() {
+               $("#codigo").keypress(verificaNumero);
+               $("#preco").keypress(verificaNumero);
+               $("#quantidade ").keypress(verificaNumero);
+           });
+       </script>
+
+
+</div>
+  <hr />
+  <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">Continuar</button>
+      <a href="index.html" class="btn btn-default">Cancelar</a>
+    </div>
+  </div>
+</form>
+<div class="footer">
+
+    <div class="span4 col-md-4">
+
+          <h3><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></h3>
+          <p>Ajudando sempre você a poupar e ganhar dinheiro.</p>
+
+        </div>
+
+        <div class="span4 col-md-4">
+
+              <h3><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span></h3>
+              <p>Ecologicamente correto sempre.</p>
+
+            </div>
+
+            <div class="span4 col-md-4">
+
+                  <h3><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></h3>
+                  <p>Atualmente uma ferramenta global.</p>
+
+                </div>
+
+                <div class="span4 col-md-12">
+
+
+                      <p>Copy right<span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span></p>
+
+                    </div>
+	</div>
+
+
+</body>
+</html>
